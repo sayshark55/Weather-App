@@ -1,0 +1,16 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "Weather app by Sayyed Sharuk",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sayyed Sharuk",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "requests": "^0.3.0"
+  }
+}
