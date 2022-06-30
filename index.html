@@ -7,10 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" href="/style.css"> -->
     <!-- <script src="script.js"></script> -->
+
+<title>Weather App</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <style>
-  * {
+    * {
   padding: 0;
   margin: 0;
   /* font-family: "Jost", sans-serif; */
@@ -204,8 +208,7 @@ body > span {
 }
 
 </style>
-<title>Weather App</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -250,13 +253,13 @@ body > span {
 
     const getCurrentDay = () => {
       var weekday = new Array(7);
-      weekday[0] = "Sunday";
-      weekday[1] = "Monday";
+      weekday[0] = "Sun";
+      weekday[1] = "Mon";
       weekday[2] = "Tue";
       weekday[3] = "Wed";
-      weekday[4] = "Thursday";
-      weekday[5] = "Friday";
-      weekday[6] = "Saturday";
+      weekday[4] = "Thu";
+      weekday[5] = "Fri";
+      weekday[6] = "Sat";
 
       let currentTime = new Date();
       let day = weekday[currentTime.getDay()];
@@ -280,7 +283,7 @@ body > span {
       ];
 
       var now = new Date();
-      var month = months[now.getMonth() + 1];
+      var month = months[now.getMonth()];
       var date = now.getDate();
 
       let hours = now.getHours();
